@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface pour jeu sérieux - Portfolio Mathys Geslin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fond d'écran -->
+    <div class="desktop-background">
+        <div class="wallpaper"></div>
+    </div>
+
+    <!-- Fenêtre détails du projet -->
+    <div class="window active" id="project-detail-window" style="display: flex; left: 5%; top: 5%; width: 90%; height: calc(90vh - var(--taskbar-height));">
+        <div class="window-titlebar">
+            <div class="window-title">
+                <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+                </svg>
+                Interface pour jeu sérieux
+            </div>
+            <div class="window-controls">
+                <button class="window-control back" onclick="window.location.href='index.html#projects'" title="Retour aux projets">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                </button>
+                <button class="window-control minimize" onclick="window.location.href='index.html'">−</button>
+                <button class="window-control close" onclick="window.location.href='index.html'">✕</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="project-detail">
+                <div class="project-detail-header">
+                    <h1>Interface de contrôle pour jeu sérieux</h1>
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Description du projet</h2>
+                    <p>
+                        Ce projet avait pour but de développer une interface de contrôle et de suivi de progression sur un jeu sérieux existant.
+                        Le jeu en question reprend certains codes des jeux Zelda, à savoir la résolution d'énigmes et l'obtention d'objets permettant de progresser.
+                        Avec cette interface, les professeurs peuvent regrouper par classe les élèves puis choisir pour chacun d'eux un parcours d'apprentissage.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h3>Gestion des classes</h3>
+                            <p>Organisation et regroupement des élèves par classe</p>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h3>Parcours personnalisés</h3>
+                            <p>Configuration de parcours d'apprentissage individuels</p>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h3>Suivi de progression</h3>
+                            <p>Visualisation détaillée des statistiques et de la progression</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Aperçus de l'interface</h2>
+                    <div class="screenshots-note">
+                        <p><strong>📸 Captures d'écran du projet :</strong></p>
+                        <ul>
+                            <li>Affichage de la liste des classes</li>
+                            <li>Affichage de la liste des élèves</li>
+                            <li>Paramétrage de la mise en place d'un parcours pour un élève</li>
+                            <li>Visualisation de la progression d'un élève</li>
+                            <li>Affichage de la progression détaillée</li>
+                            <li>Visualisation des statistiques complètes</li>
+                        </ul>
+                        <p class="note-italic">* Les captures d'écran du jeu ne peuvent pas être montrées pour des raisons de confidentialité.</p>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h2>Objectifs pédagogiques</h2>
+                    <p>
+                        L'interface permet aux professeurs d'adapter le niveau de difficulté et de suivre la progression de chaque élève individuellement.
+                        Le jeu sérieux vise à réviser les tables de multiplication de manière ludique et engageante, en utilisant des mécaniques de jeu inspirées
+                        des jeux d'aventure classiques.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-list">
+                        <div class="tech-item">
+                            <strong>Unity</strong>
+                            <p>Moteur de jeu pour le développement de l'interface</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>C#</strong>
+                            <p>Langage de programmation pour la logique applicative</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <button onclick="window.location.href='index.html'" class="btn-back">
+                        ← Retour au portfolio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barre des tâches -->
+    <div class="taskbar">
+        <button class="start-button" onclick="window.location.href='index.html'">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+        </button>
+        
+        <div class="taskbar-items">
+            <button class="taskbar-item active">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+                </svg>
+                <span>Interface pour jeu sérieux</span>
+            </button>
+        </div>
+
+        <div class="system-tray">
+            <div class="clock">
+                <div class="time" id="time">12:00</div>
+                <div class="date" id="date">01/01/2026</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Horloge
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const day = now.getDate().toString().padStart(2, '0');
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const year = now.getFullYear();
+            
+            document.getElementById('time').textContent = `${hours}:${minutes}`;
+            document.getElementById('date').textContent = `${day}/${month}/${year}`;
+        }
+        
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>

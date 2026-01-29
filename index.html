@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Interface Système</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fond d'écran -->
+    <div class="desktop-background">
+        <div class="wallpaper"></div>
+    </div>
+
+    <!-- Icônes du bureau -->
+    <div class="desktop-icons">
+        <div class="icon" data-window="profile">
+            <div class="icon-image">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+            </div>
+            <span>Profil</span>
+        </div>
+        <div class="icon" data-window="skills">
+            <div class="icon-image">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+                </svg>
+            </div>
+            <span>Compétences</span>
+        </div>
+        <div class="icon" data-window="projects">
+            <div class="icon-image">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+            </div>
+            <span>Projets</span>
+        </div>
+        <div class="icon" data-window="contact">
+            <div class="icon-image">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </div>
+            <span>Contact</span>
+        </div>
+    </div>
+
+    <!-- Fenêtre Profil -->
+    <div class="window" id="profile-window" data-window="profile">
+        <div class="window-titlebar">
+            <div class="window-title">
+                <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                Profil
+            </div>
+            <div class="window-controls">
+                <button class="window-control minimize">−</button>
+                <button class="window-control maximize">□</button>
+                <button class="window-control close">✕</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                    </div>  
+                    <h1>Mathys GESLIN</h1>
+                    <p class="profile-subtitle">
+                        Étudiant à l'ENSIM (École Nationale Supérieure d'Ingénieurs du Mans)<br>
+                        En alternance chez COVEA - Automatisation de tests
+                    </p>
+                </div>
+                <div class="profile-info">
+                    <div class="info-section">
+                        <h2>À propos</h2>
+                        <p>
+                            Passionné par le développement informatique et l'innovation technologique,
+                            j'ai un parcours marqué par des projets concrets réalisés tout au long
+                            de mes deux formations que ce soit en Java, avec Unity ou encore
+                            tout ce qui touche aux technologies web (HTML/CSS, PHP, JavaScript).
+                        </p>
+                    </div>
+                    <div class="info-section">
+                        <h2>Parcours professionnel</h2>
+                        <ul class="timeline">
+                            <li>
+                                <strong>Août 2025 - Présent</strong>
+                                <p>Alternance chez COVEA - Automatisation de tests</p>
+                                <br>
+                                <span class="tag">Selenium</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">UFT</span>
+                                <span class="tag">VBScript</span>
+                                <span class="tag">Jenkins</span>
+                                <span class="tag">Jira</span>
+                                <span class="tag">GitLab</span>
+                                <span class="tag">SVN</span>
+                                <span class="tag">IntelliJ IDEA</span>
+                            </li>
+                            <li>
+                                <strong>Juillet 2025 - Août 2025</strong>
+                                <p>CDD chez Bleez - Développeur de logiciel</p>
+                                <p>Développement d'une API bancaire pour un logiciel de comptabilité</p>
+                                <br>
+                                <span class="tag">Java</span>
+                                <span class="tag">XML</span>
+                                <span class="tag">JSON</span>
+                                <span class="tag">GitLab</span>
+                                <span class="tag">IntelliJ IDEA</span>
+                            </li>
+                            <li>
+                                <strong>Mars 2024 - Juillet 2024</strong>
+                                <p>Stage au LIUM (Laboratoire d'Informatique de l'Université du Mans) - Ingénierie de données</p>
+                                <br>
+                                <span class="tag">Python</span>
+                                <span class="tag">dbt</span>
+                                <span class="tag">Airbyte</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">GitLab</span>
+                                <span class="tag">VS Code</span>
+                            </li>
+                            <li>
+                                <strong>Avril 2023 - Août 2023</strong>
+                                <p>Stage et CDD chez Bleez - Automatisation de tests</p>
+                                <br>
+                                <span class="tag">Robotframework</span>
+                                <span class="tag">Jira</span>
+                                <span class="tag">TestRail</span>
+                                <span class="tag">GitLab</span>
+                                <span class="tag">IntelliJ IDEA</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-section">
+                        <h2>Formations</h2>
+                        <ul class="timeline">
+                            <li>
+                                <strong>Septembre 2024 - Juin 2027</strong>
+                                <p>ENSIM - École Nationale Supérieure d'Ingénieurs du Mans - Université du Mans, France</p>
+                                <p>Informatique - Formation initiale en 3e année puis alternance</p>
+                            </li>
+                            <li>
+                                <strong>Septembre 2021 - Juin 2024</strong>
+                                <p>IUT de Laval - Université du Mans, France</p>
+                                <p>Parcours réalisation d'applications</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-section">
+                        <h2>Centres d'intérêt</h2>
+                        <div class="interests">                            
+                            <span class="tag">Design UI/UX</span>
+                            <span class="tag">Nouvelles Technologies</span>
+                            <span class="tag">Jeux Vidéo</span>
+                            <span class="tag">Automobile</span>
+                            <span class="tag">Intelligence Artificielle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fenêtre Compétences -->
+    <div class="window" id="skills-window" data-window="skills">
+        <div class="window-titlebar">
+            <div class="window-title">
+                <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+                </svg>
+                Compétences
+            </div>
+            <div class="window-controls">
+                <button class="window-control minimize">−</button>
+                <button class="window-control maximize">□</button>
+                <button class="window-control close">✕</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="skills-container">
+                <div class="skills-legend">
+                    <h3>Légende des niveaux de maîtrise</h3>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <div class="legend-bar" data-level="faible"></div>
+                            <span>Faible maîtrise</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-bar" data-level="moyenne"></div>
+                            <span>Maîtrise moyenne</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-bar" data-level="bonne"></div>
+                            <span>Bonne maîtrise</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-bar" data-level="autonome"></div>
+                            <span>Autonome</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h2>Front-End</h2>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML/CSS</span>
+                            <span class="skill-level">Autonome</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="autonome"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span class="skill-level">Autonome</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="autonome"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PHP</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Laravel</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h2>Back-End & Langages</h2>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span>
+                            <span class="skill-level">Autonome</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="autonome"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Java</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C#</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C</span>
+                            <span class="skill-level">Maîtrise moyenne</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="moyenne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>SQL/PostgreSQL</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h2>Outils & Frameworks</h2>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Unity</span>
+                            <span class="skill-level">Autonome</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="autonome"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Git/GitLab/GitHub</span>
+                            <span class="skill-level">Autonome</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="autonome"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Docker</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Robotframework</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>dbt / Airbyte</span>
+                            <span class="skill-level">Maîtrise moyenne</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="moyenne"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Jira / TestRail</span>
+                            <span class="skill-level">Bonne maîtrise</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-mastery="bonne"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fenêtre Projets -->
+    <div class="window" id="projects-window" data-window="projects">
+        <div class="window-titlebar">
+            <div class="window-title">
+                <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+                Mes Projets
+            </div>
+            <div class="window-controls">
+                <button class="window-control minimize">−</button>
+                <button class="window-control maximize">□</button>
+                <button class="window-control close">✕</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <!-- Barre de navigation pour les projets -->
+            <div class="project-nav" style="display: none;">
+                <button class="nav-back-btn" onclick="navigateToProjectList()">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                    <span>Retour aux projets</span>
+                </button>
+            </div>
+
+            <!-- Liste des projets -->
+            <div class="projects-container" id="projects-list">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.07 4.74 14.12 4 12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9 9-4.03 9-9c0-2.12-.74-4.07-1.97-5.61zM12 20c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interface de contrôle pour jeu sérieux</h3>
+                        <p>Réalisation d'une interface pour jeu sérieux permettant la révision des tables de multiplication. Elle est destinée aux professeurs pour régler les paramètres de jeu et voir la progression de chaque élève.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="navigateToProjectDetail('jeu-serieux'); return false;">Détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Réalisation d'un Mastermind</h3>
+                        <p>Reproduction du célèbre jeu de réflexion au format numérique. Réalisé dans le cadre d'une évaluation pour observer les compétences en algorithmie et structures de données.</p>
+                        <div class="project-tags">
+                            <span class="tag">C</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l-5.5 9h11z"/>
+                                <circle cx="17.5" cy="17.5" r="4.5"/>
+                                <path d="M3 13.5h8v8H3z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Site web de gestion de livres d'une librairie</h3>
+                        <p>Gestionnaire de livres d'une librairie fictive permettant la réservation de livres en ligne. Évaluation des compétences sur les technologies web en réalisant un site dynamique.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">GitLab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="navigateToProjectDetail('librairie'); return false;">Détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Site web d'entrainement au TOEIC</h3>
+                        <p>Plateforme d'entrainement à la certification d'anglais. Projet transversal visant à créer une plateforme sur laquelle les étudiants de l'ENSIM peuvent s'entrainer, réviser et se tester.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">GitHub</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pipeline de données - LIUM</h3>
+                        <p>Réalisation d'un pipeline de données pour traiter et analyser des données vibro-acoustiques suivant différents cas d'utilisateur. Stage de 10 semaines au laboratoire LIUM.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MatLAB</span>
+                            <span class="tag">dbt</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Airbyte</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Rapport de stage</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tests Fonctionnels Automatisés - Bleez</h3>
+                        <p>Réalisation de tests fonctionnels automatisés (TFA) simulant le comportement d'un utilisateur sur la nouvelle interface du logiciel de comptabilité. Stage de 10 semaines chez Bleez (ex-Compta.com).</p>
+                        <div class="project-tags">
+                            <span class="tag">Robotframework</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">TestRail</span>
+                            <span class="tag">GitLab</span>
+                            <span class="tag">Jira</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Rapport de stage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Détails des projets (cachés par défaut) -->
+            <div class="project-details-container" id="project-details" style="display: none;">
+                <!-- Détails Jeu Sérieux -->
+                <div class="project-detail" id="detail-jeu-serieux" style="display: none;">
+                    <div class="project-detail-header">
+                        <h1>Interface de contrôle pour jeu sérieux</h1>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Description du projet</h2>
+                        <p>
+                            Ce projet avait pour but de développer une interface de contrôle et de suivi de progression sur un jeu sérieux existant.
+                            Le jeu en question reprend certains codes des jeux Zelda, à savoir la résolution d'énigmes et l'obtention d'objets permettant de progresser.
+                            Avec cette interface, les professeurs peuvent regrouper par classe les élèves puis choisir pour chacun d'eux un parcours d'apprentissage.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Fonctionnalités principales</h2>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Gestion des classes</h3>
+                                <p>Organisation et regroupement des élèves par classe</p>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Parcours personnalisés</h3>
+                                <p>Configuration de parcours d'apprentissage individuels</p>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Suivi de progression</h3>
+                                <p>Visualisation détaillée des statistiques et de la progression</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Aperçus de l'interface</h2>
+                        <div class="screenshots-note">
+                            <p><strong>📸 Captures d'écran du projet :</strong></p>
+                            <ul>
+                                <li>Affichage de la liste des classes</li>
+                                <li>Affichage de la liste des élèves</li>
+                                <li>Paramétrage de la mise en place d'un parcours pour un élève</li>
+                                <li>Visualisation de la progression d'un élève</li>
+                                <li>Affichage de la progression détaillée</li>
+                                <li>Visualisation des statistiques complètes</li>
+                            </ul>
+                            <p class="note-italic">* Les captures d'écran du jeu ne peuvent pas être montrées pour des raisons de confidentialité.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Objectifs pédagogiques</h2>
+                        <p>
+                            L'interface permet aux professeurs d'adapter le niveau de difficulté et de suivre la progression de chaque élève individuellement.
+                            Le jeu sérieux vise à réviser les tables de multiplication de manière ludique et engageante, en utilisant des mécaniques de jeu inspirées
+                            des jeux d'aventure classiques.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Technologies utilisées</h2>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <strong>Unity</strong>
+                                <p>Moteur de jeu pour le développement de l'interface</p>
+                            </div>
+                            <div class="tech-item">
+                                <strong>C#</strong>
+                                <p>Langage de programmation pour la logique applicative</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="nav-back-btn" onclick="navigateToProjectList()">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                            </svg>
+                            <span>Retour aux projets</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Détails Librairie -->
+                <div class="project-detail" id="detail-librairie" style="display: none;">
+                    <div class="project-detail-header">
+                        <h1>Site web de gestion de livres d'une librairie</h1>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">GitLab</span>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Contexte du projet</h2>
+                        <p>
+                            Ce projet est issu d'une évaluation dans laquelle nous devions réaliser un site web dynamique. Nous avons choisi de créer 
+                            un site de gestion de livres pour une librairie fictive étant donné qu'il est nécessaire d'avoir, à minima, du PHP pour 
+                            gérer les stocks de livres et la connexion de l'utilisateur en plus de l'HTML et du CSS.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Fonctionnalités principales</h2>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Catalogue de livres</h3>
+                                <p>Page d'accueil affichant tous les livres disponibles ou non</p>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Recherche avancée</h3>
+                                <p>Recherche par titre d'œuvre ou par auteur</p>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Système d'authentification</h3>
+                                <p>Connexion et inscription des utilisateurs</p>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <h3>Gestion de panier</h3>
+                                <p>Réservation de livres avec mise à jour automatique de la disponibilité</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Parcours utilisateur</h2>
+                        <div class="user-journey">
+                            <div class="journey-step">
+                                <div class="step-number">1</div>
+                                <h3>Page d'accueil</h3>
+                                <p>Affichage de tous les livres avec leur statut de disponibilité. Possibilité de rechercher un livre spécifique.</p>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-number">2</div>
+                                <h3>Authentification</h3>
+                                <p>Pour réserver des livres, l'utilisateur doit se connecter ou créer un compte.</p>
+                            </div>
+                            <div class="journey-step">
+                                <div class="step-number">3</div>
+                                <h3>Réservation</h3>
+                                <p>Une fois connecté, l'utilisateur peut ajouter des livres au panier. Les livres réservés sont marqués comme "Indisponible".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Aperçus du site</h2>
+                        <div class="screenshots-note">
+                            <p><strong>📸 Captures d'écran disponibles :</strong></p>
+                            <ul>
+                                <li>Page d'accueil du site de gestion de livres</li>
+                                <li>Résultat d'une recherche</li>
+                                <li>Page de connexion</li>
+                                <li>Page d'inscription</li>
+                                <li>Page d'accueil pour utilisateur connecté avec gestion du panier</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Technologies utilisées</h2>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <strong>HTML/CSS</strong>
+                                <p>Structure et mise en forme de l'interface utilisateur</p>
+                            </div>
+                            <div class="tech-item">
+                                <strong>PHP</strong>
+                                <p>Gestion côté serveur, authentification et logique métier</p>
+                            </div>
+                            <div class="tech-item">
+                                <strong>SQL</strong>
+                                <p>Gestion de la base de données (livres, utilisateurs, réservations)</p>
+                            </div>
+                            <div class="tech-item">
+                                <strong>GitLab</strong>
+                                <p>Gestion de version et collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h2>Objectifs du projet</h2>
+                        <p>
+                            L'objectif principal était d'évaluer les compétences acquises sur les technologies web en réalisant un site dynamique complet.
+                            Ce projet a permis de mettre en pratique :
+                        </p>
+                        <ul>
+                            <li>La création d'une architecture web trois tiers (présentation, logique, données)</li>
+                            <li>La gestion de sessions et d'authentification utilisateur</li>
+                            <li>Les opérations CRUD sur une base de données</li>
+                            <li>La sécurisation des formulaires et des requêtes SQL</li>
+                            <li>La gestion d'état et de disponibilité des ressources</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-actions">
+                        <button class="nav-back-btn" onclick="navigateToProjectList()">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                            </svg>
+                            <span>Retour aux projets</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fenêtre Contact -->
+    <div class="window" id="contact-window" data-window="contact">
+        <div class="window-titlebar">
+            <div class="window-title">
+                <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Contact
+            </div>
+            <div class="window-controls">
+                <button class="window-control minimize">−</button>
+                <button class="window-control maximize">□</button>
+                <button class="window-control close">✕</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Restons en contact</h2>
+                    <p>N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger !</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <p>mathys.geslin.pro@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>Mathys GESLIN</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>Voir profil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barre des tâches -->
+    <div class="taskbar">
+        <button class="start-button">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+            </svg>
+        </button>
+        
+        <div class="taskbar-items">
+            <!-- Les items seront ajoutés dynamiquement -->
+        </div>
+
+        <div class="system-tray">
+            <button class="theme-toggle" title="Changer le thème">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                    <path d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.06 7 9.54 0 4.48-2.94 8.27-7 9.54.95.3 1.95.46 3 .46 5.52 0 10-4.48 10-10S14.52 2 9 2z"/>
+                </svg>
+            </button>
+            <div class="clock">
+                <div class="time">12:00</div>
+                <div class="date">01/01/2026</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Démarrer -->
+    <div class="start-menu">
+        <div class="start-menu-header">
+            <div class="user-profile-small">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span>Mathys Geslin</span>
+            </div>
+        </div>
+        <div class="start-menu-items">
+            <div class="start-menu-item" data-window="profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span>Profil</span>
+            </div>
+            <div class="start-menu-item" data-window="skills">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+                </svg>
+                <span>Compétences</span>
+            </div>
+            <div class="start-menu-item" data-window="projects">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+                <span>Projets</span>
+            </div>
+            <div class="start-menu-item" data-window="contact">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <span>Contact</span>
+            </div>
+        </div>
+        <div class="start-menu-footer">
+            <button class="power-button" title="Options d'alimentation">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
