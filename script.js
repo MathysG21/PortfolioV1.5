@@ -757,3 +757,57 @@ function stopResize() {
     resizeWindow = null;
 }
 
+// ===== Modal pour afficher les images en grand =====
+function openImageModal(screenshotItem) {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalCaption = document.getElementById('modal-caption');
+    
+    const img = screenshotItem.querySelector('.screenshot-img');
+    const caption = screenshotItem.querySelector('.screenshot-caption');
+    
+    modal.style.display = 'flex';
+    modal.classList.add('active');
+    modalImg.src = img.src;
+    modalCaption.textContent = caption.textContent;
+    
+    // Empêcher le scroll du body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('image-modal');
+    modal.classList.remove('active');
+    modal.style.display = 'none';
+    
+    // Réactiver le scroll du body
+    document.body.style.overflow = '';
+}
+
+// Fermer le modal au clic
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('image-modal');
+    const closeBtn = document.querySelector('.modal-close');
+    
+    // Fermer avec le bouton X
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeImageModal);
+    }
+    
+    // Fermer en cliquant en dehors de l'image
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeImageModal();
+            }
+        });
+    }
+    
+    // Fermer avec la touche Échap
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeImageModal();
+        }
+    });
+});
+
