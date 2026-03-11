@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
     initializeSkills();
     initializeContactForm();
+    initializeLanguage();
 });
 
 // Gestion des icônes du bureau
@@ -810,4 +811,415 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Système de traduction i18n
+const translations = {
+    fr: {
+        // Icônes bureau et menu
+        profile: "Profil",
+        skills: "Compétences",
+        projects: "Projets",
+        contact: "Contact",
+        
+        // Profil
+        "profile.subtitle": "Étudiant à l'ENSIM (École Nationale Supérieure d'Ingénieurs du Mans)<br>En alternance chez COVEA - Automatisation de tests",
+        "profile.about.title": "À propos",
+        "profile.about.text": "Passionné par le développement informatique et l'innovation technologique, j'ai un parcours marqué par des projets concrets réalisés tout au long de mes deux formations que ce soit en Java, avec Unity ou encore tout ce qui touche aux technologies web (HTML/CSS, PHP, JavaScript).",
+        "profile.experience.title": "Parcours professionnel",
+        "profile.experience.covea.date": "Août 2025 - Présent",
+        "profile.experience.covea.title": "Alternance chez COVEA - Automatisation de tests",
+        "profile.experience.bleez2.date": "Juillet 2025 - Août 2025",
+        "profile.experience.bleez2.title": "CDD chez Bleez - Développeur de logiciel",
+        "profile.experience.bleez2.desc": "Développement d'une API bancaire pour un logiciel de comptabilité",
+        "profile.experience.lium.date": "Mars 2024 - Juillet 2024",
+        "profile.experience.lium.title": "Stage au LIUM (Laboratoire d'Informatique de l'Université du Mans) - Ingénierie de données",
+        "profile.experience.bleez1.date": "Avril 2023 - Août 2023",
+        "profile.experience.bleez1.title": "Stage et CDD chez Bleez - Automatisation de tests",
+        "profile.education.title": "Formations",
+        "profile.education.ensim.date": "Septembre 2024 - Juin 2027",
+        "profile.education.ensim.school": "ENSIM - École Nationale Supérieure d'Ingénieurs du Mans - Université du Mans, France",
+        "profile.education.ensim.program": "Informatique - Formation initiale en 3e année puis alternance",
+        "profile.education.iut.date": "Septembre 2021 - Juin 2024",
+        "profile.education.iut.school": "IUT de Laval - Université du Mans, France",
+        "profile.education.iut.program": "Parcours réalisation d'applications",
+        "profile.interests.title": "Centres d'intérêt",
+        "profile.interests.tag.uiux": "Design UI/UX",
+        "profile.interests.tag.tech": "Nouvelles Technologies",
+        "profile.interests.tag.games": "Jeux Vidéo",
+        "profile.interests.tag.car": "Automobile",
+        "profile.interests.tag.ai": "Intelligence Artificielle",
+        
+        // Compétences
+        "skills.legend.title": "Légende des niveaux de maîtrise",
+        "skills.level.weak": "Faible maîtrise",
+        "skills.level.average": "Maîtrise moyenne",
+        "skills.level.good": "Bonne maîtrise",
+        "skills.level.autonomous": "Autonome",
+        "skills.category.frontend": "Front-End",
+        "skills.category.backend": "Back-End & Langages",
+        "skills.category.tools": "Outils & Frameworks",
+        
+        // Projets
+        "projects.title": "Mes Projets",
+        "projects.list": "Liste des projets",
+        "projects.tags": "Technologies",
+        "projects.links": "Liens",
+        "projects.button.details": "Détails",
+        "projects.button.download": "Télécharger",
+        "projects.button.back": "Retour aux projets",
+        
+        // Projets individuels
+        "projects.serious-game.title": "Interface de contrôle pour jeu sérieux",
+        "projects.serious-game.desc": "Réalisation d'une interface pour jeu sérieux permettant la révision des tables de multiplication. Elle est destinée aux professeurs pour régler les paramètres de jeu et voir la progression de chaque élève.",
+        "projects.mastermind.title": "Réalisation d'un Mastermind",
+        "projects.mastermind.desc": "Reproduction du célèbre jeu de réflexion au format numérique. Réalisé dans le cadre d'une évaluation pour observer les compétences en algorithmie et structures de données.",
+        "projects.library.title": "Site web de gestion de livres d'une librairie",
+        "projects.library.desc": "Gestionnaire de livres d'une librairie fictive permettant la réservation de livres en ligne. Évaluation des compétences sur les technologies web en réalisant un site dynamique.",
+        "projects.toeic.title": "Site web d'entrainement au TOEIC",
+        "projects.toeic.desc": "Plateforme d'entrainement à la certification d'anglais. Projet transversal visant à créer une plateforme sur laquelle les étudiants de l'ENSIM peuvent s'entrainer, réviser et se tester.",
+        "projects.covea.title": "Tests Automatisés - COVEA",
+        "projects.covea.desc": "Réalisation de tests automatisés pour les applications du groupe COVEA. Alternance en cours ayant pour objectifs :",
+        "projects.covea.obj1": "Sécuriser les services vitaux (services essentiels au bon fonctionnement de l'entreprise)",
+        "projects.covea.obj2": "Réaliser des peuplements de données",
+        "projects.covea.obj3": "Réaliser les campagnes de tests automatisés selon les versions des logiciels internes",
+        "projects.lium.title": "Pipeline de données - LIUM",
+        "projects.lium.desc": "Réalisation d'un pipeline de données pour traiter et analyser des données vibro-acoustiques suivant différents cas d'utilisateur. Stage de 16 semaines au laboratoire LIUM.",
+        "projects.bleez.title": "Tests Fonctionnels Automatisés - Bleez",
+        "projects.bleez.desc": "Réalisation de tests fonctionnels automatisés (TFA) simulant le comportement d'un utilisateur sur la nouvelle interface du logiciel de comptabilité. Stage de 12 semaines chez Bleez (ex-Compta.com).",
+        
+        // Contact
+        "contact.title": "Restons en contact",
+        "contact.description": "N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger !",
+        "contact.email.title": "Email",
+        "contact.linkedin.title": "LinkedIn",
+        "contact.github.title": "GitHub",
+        "contact.github.text": "Voir profil",
+        "contact.button.email": "M'envoyer un email",
+        "contact.button.linkedin": "Voir mon profil LinkedIn",
+        
+        // Menu et barre des tâches
+        "menu.user": "Mathys Geslin",
+        "theme.toggle": "Changer le thème",
+        "lang.toggle": "Changer la langue",
+        "power.button": "Options d'alimentation",
+        
+        // Détail projet Jeu Sérieux
+        "projects.serious-game.detail.desc-title": "Description du projet",
+        "projects.serious-game.detail.desc-text": "Ce projet avait pour but de développer une interface de contrôle et de suivi de progression sur un jeu sérieux existant. Le jeu en question reprend certains codes des jeux Zelda, à savoir la résolution d'énigmes et l'obtention d'objets permettant de progresser. Avec cette interface, les professeurs peuvent regrouper par classe les élèves puis choisir pour chacun d'eux un parcours d'apprentissage.",
+        "projects.serious-game.detail.features-title": "Fonctionnalités principales",
+        "projects.serious-game.detail.feature1-title": "Gestion des classes",
+        "projects.serious-game.detail.feature1-desc": "Organisation et regroupement des élèves par classe",
+        "projects.serious-game.detail.feature2-title": "Parcours personnalisés",
+        "projects.serious-game.detail.feature2-desc": "Configuration de parcours d'apprentissage individuels",
+        "projects.serious-game.detail.feature3-title": "Suivi de progression",
+        "projects.serious-game.detail.feature3-desc": "Visualisation détaillée des statistiques et de la progression",
+        "projects.serious-game.detail.screenshots-title": "Aperçus de l'interface",
+        "projects.serious-game.detail.screen1": "Liste des classes",
+        "projects.serious-game.detail.screen2": "Liste des élèves",
+        "projects.serious-game.detail.screen3": "Paramétrage du parcours",
+        "projects.serious-game.detail.screen4": "Progression d'un élève",
+        "projects.serious-game.detail.screen5": "Progression détaillée",
+        "projects.serious-game.detail.screen6": "Statistiques complètes",
+        "projects.serious-game.detail.confidential": "* Les captures d'écran réelles du jeu ne peuvent pas être montrées pour des raisons de confidentialité.",
+        "projects.serious-game.detail.objectives-title": "Objectifs pédagogiques",
+        "projects.serious-game.detail.objectives-text": "L'interface permet aux professeurs d'adapter le niveau de difficulté et de suivre la progression de chaque élève individuellement. Le jeu sérieux vise à réviser les tables de multiplication de manière ludique et engageante, en utilisant des mécaniques de jeu inspirées des jeux d'aventure classiques.",
+        "projects.serious-game.detail.tech-title": "Technologies utilisées",
+        "projects.serious-game.detail.tech1": "Moteur de jeu pour le développement de l'interface",
+        "projects.serious-game.detail.tech2": "Langage de programmation pour la logique applicative",
+        
+        // Détail projet Librairie
+        "projects.library.detail.context-title": "Contexte du projet",
+        "projects.library.detail.context-text": "Ce projet est issu d'une évaluation dans laquelle nous devions réaliser un site web dynamique. Nous avons choisi de créer un site de gestion de livres pour une librairie fictive étant donné qu'il est nécessaire d'avoir, à minima, du PHP pour gérer les stocks de livres et la connexion de l'utilisateur en plus de l'HTML et du CSS.",
+        "projects.library.detail.features-title": "Fonctionnalités principales",
+        "projects.library.detail.feature1-title": "Catalogue de livres",
+        "projects.library.detail.feature1-desc": "Page d'accueil affichant tous les livres disponibles ou non",
+        "projects.library.detail.feature2-title": "Recherche avancée",
+        "projects.library.detail.feature2-desc": "Recherche par titre d'œuvre ou par auteur",
+        "projects.library.detail.feature3-title": "Système d'authentification",
+        "projects.library.detail.feature3-desc": "Connexion et inscription des utilisateurs",
+        "projects.library.detail.feature4-title": "Gestion de panier",
+        "projects.library.detail.feature4-desc": "Réservation de livres avec mise à jour automatique de la disponibilité",
+        "projects.library.detail.journey-title": "Parcours utilisateur",
+        "projects.library.detail.journey1-title": "Page d'accueil",
+        "projects.library.detail.journey1-desc": "Affichage de tous les livres avec leur statut de disponibilité. Possibilité de rechercher un livre spécifique.",
+        "projects.library.detail.journey2-title": "Authentification",
+        "projects.library.detail.journey2-desc": "Pour réserver des livres, l'utilisateur doit se connecter ou créer un compte.",
+        "projects.library.detail.journey3-title": "Réservation",
+        "projects.library.detail.journey3-desc": "Une fois connecté, l'utilisateur peut ajouter des livres au panier. Les livres réservés sont marqués comme \"Indisponible\".",
+        "projects.library.detail.screenshots-title": "Aperçus du site",
+        "projects.library.detail.screen1": "Page d'accueil du site",
+        "projects.library.detail.screen2": "Résultat d'une recherche",
+        "projects.library.detail.screen3": "Page de connexion",
+        "projects.library.detail.screen4": "Page d'inscription",
+        "projects.library.detail.tech-title": "Technologies utilisées",
+        "projects.library.detail.tech1-desc": "Structure et mise en forme de l'interface utilisateur",
+        "projects.library.detail.tech2-desc": "Gestion côté serveur, authentification et logique métier",
+        "projects.library.detail.tech3-desc": "Gestion de la base de données (livres, utilisateurs, réservations)",
+        "projects.library.detail.tech4-desc": "Gestion de version et collaboration",
+        "projects.library.detail.objectives-title": "Objectifs du projet",
+        "projects.library.detail.objectives-intro": "L'objectif principal était d'évaluer les compétences acquises sur les technologies web en réalisant un site dynamique complet. Ce projet a permis de mettre en pratique :",
+        "projects.library.detail.objective1": "La création d'une architecture web trois tiers (présentation, logique, données)",
+        "projects.library.detail.objective2": "La gestion de sessions et d'authentification utilisateur",
+        "projects.library.detail.objective3": "Les opérations CRUD sur une base de données",
+        "projects.library.detail.objective4": "La sécurisation des formulaires et des requêtes SQL",
+        "projects.library.detail.objective5": "La gestion d'état et de disponibilité des ressources"
+    },
+    en: {
+        // Desktop and menu icons
+        profile: "Profile",
+        skills: "Skills",
+        projects: "Projects",
+        contact: "Contact",
+        
+        // Profile
+        "profile.subtitle": "Student at ENSIM (National School of Engineering of Le Mans)<br>Working at COVEA - Test Automation",
+        "profile.about.title": "About",
+        "profile.about.text": "Passionate about software development and technological innovation, I have a background marked by concrete projects carried out throughout my two training programs, whether in Java, with Unity or everything related to web technologies (HTML/CSS, PHP, JavaScript).",
+        "profile.experience.title": "Professional Experience",
+        "profile.experience.covea.date": "August 2025 - Present",
+        "profile.experience.covea.title": "Apprenticeship at COVEA - Test Automation",
+        "profile.experience.bleez2.date": "July 2025 - August 2025",
+        "profile.experience.bleez2.title": "Fixed-term contract at Bleez - Software Developer",
+        "profile.experience.bleez2.desc": "Development of a banking API for accounting software",
+        "profile.experience.lium.date": "March 2024 - July 2024",
+        "profile.experience.lium.title": "Internship at LIUM (Computer Science Laboratory of Le Mans University) - Data Engineering",
+        "profile.experience.bleez1.date": "April 2023 - August 2023",
+        "profile.experience.bleez1.title": "Internship and Fixed-term contract at Bleez - Test Automation",
+        "profile.education.title": "Education",
+        "profile.education.ensim.date": "September 2024 - June 2027",
+        "profile.education.ensim.school": "ENSIM - National School of Engineering of Le Mans - Le Mans University, France",
+        "profile.education.ensim.program": "Computer Science - Initial training in 3rd year then apprenticeship",
+        "profile.education.iut.date": "September 2021 - June 2024",
+        "profile.education.iut.school": "IUT of Laval - Le Mans University, France",
+        "profile.education.iut.program": "Application development track",
+        "profile.interests.title": "Interests",
+        "profile.interests.tag.uiux": "UI/UX Design",
+        "profile.interests.tag.tech": "New Technologies",
+        "profile.interests.tag.games": "Video Games",
+        "profile.interests.tag.car": "Automotive",
+        "profile.interests.tag.ai": "Artificial Intelligence",
+        
+        // Skills
+        "skills.legend.title": "Mastery Levels Legend",
+        "skills.level.weak": "Basic knowledge",
+        "skills.level.average": "Average mastery",
+        "skills.level.good": "Good mastery",
+        "skills.level.autonomous": "Autonomous",
+        "skills.category.frontend": "Front-End",
+        "skills.category.backend": "Back-End & Languages",
+        "skills.category.tools": "Tools & Frameworks",
+        
+        // Projects
+        "projects.title": "My Projects",
+        "projects.list": "Projects list",
+        "projects.tags": "Technologies",
+        "projects.links": "Links",
+        "projects.button.details": "Details",
+        "projects.button.download": "Download",
+        "projects.button.back": "Back to projects",
+        
+        // Individual projects
+        "projects.serious-game.title": "Control Interface for Serious Game",
+        "projects.serious-game.desc": "Development of an interface for a serious game enabling multiplication tables practice. It is designed for teachers to configure game settings and monitor each student's progress.",
+        "projects.mastermind.title": "Mastermind Game Implementation",
+        "projects.mastermind.desc": "Digital reproduction of the famous logic game. Developed as part of an evaluation to demonstrate skills in algorithms and data structures.",
+        "projects.library.title": "Bookstore Management Website",
+        "projects.library.desc": "Book management system for a fictional bookstore enabling online book reservations. Assessment of web technology skills by creating a dynamic website.",
+        "projects.toeic.title": "TOEIC Training Website",
+        "projects.toeic.desc": "English certification training platform. Cross-functional project aimed at creating a platform where ENSIM students can train, review and test themselves.",
+        "projects.covea.title": "Automated Testing - COVEA",
+        "projects.covea.desc": "Development of automated tests for COVEA group applications. Ongoing apprenticeship with the following objectives:",
+        "projects.covea.obj1": "Secure vital services (essential services for company operations)",
+        "projects.covea.obj2": "Perform data population",
+        "projects.covea.obj3": "Execute automated test campaigns according to internal software versions",
+        "projects.lium.title": "Data Pipeline - LIUM",
+        "projects.lium.desc": "Development of a data pipeline to process and analyze vibro-acoustic data for different user cases. 16-week internship at LIUM laboratory.",
+        "projects.bleez.title": "Automated Functional Testing - Bleez",
+        "projects.bleez.desc": "Development of automated functional tests (AFT) simulating user behavior on the new accounting software interface. 12-week internship at Bleez (formerly Compta.com).",
+        
+        // Contact
+        "contact.title": "Let's stay in touch",
+        "contact.description": "Feel free to contact me to discuss your projects or simply to exchange!",
+        "contact.email.title": "Email",
+        "contact.linkedin.title": "LinkedIn",
+        "contact.github.title": "GitHub",
+        "contact.github.text": "View profile",
+        "contact.button.email": "Send me an email",
+        "contact.button.linkedin": "View my LinkedIn profile",
+        
+        // Menu and taskbar
+        "menu.user": "Mathys Geslin",
+        "theme.toggle": "Change theme",
+        "lang.toggle": "Change language",
+        "power.button": "Power options",
+        
+        // Serious Game project detail
+        "projects.serious-game.detail.desc-title": "Project Description",
+        "projects.serious-game.detail.desc-text": "This project aimed to develop a control and progress tracking interface for an existing serious game. The game adopts certain codes from Zelda games, namely puzzle solving and obtaining items to progress. With this interface, teachers can group students by class and choose a learning path for each of them.",
+        "projects.serious-game.detail.features-title": "Main Features",
+        "projects.serious-game.detail.feature1-title": "Class Management",
+        "projects.serious-game.detail.feature1-desc": "Organization and grouping of students by class",
+        "projects.serious-game.detail.feature2-title": "Personalized Paths",
+        "projects.serious-game.detail.feature2-desc": "Configuration of individual learning paths",
+        "projects.serious-game.detail.feature3-title": "Progress Tracking",
+        "projects.serious-game.detail.feature3-desc": "Detailed visualization of statistics and progress",
+        "projects.serious-game.detail.screenshots-title": "Interface Preview",
+        "projects.serious-game.detail.screen1": "Class list",
+        "projects.serious-game.detail.screen2": "Student list",
+        "projects.serious-game.detail.screen3": "Path configuration",
+        "projects.serious-game.detail.screen4": "Student progress",
+        "projects.serious-game.detail.screen5": "Detailed progress",
+        "projects.serious-game.detail.screen6": "Complete statistics",
+        "projects.serious-game.detail.confidential": "* Actual game screenshots cannot be shown for confidentiality reasons.",
+        "projects.serious-game.detail.objectives-title": "Educational Objectives",
+        "projects.serious-game.detail.objectives-text": "The interface allows teachers to adapt the difficulty level and track each student's progress individually. The serious game aims to review multiplication tables in a fun and engaging way, using game mechanics inspired by classic adventure games.",
+        "projects.serious-game.detail.tech-title": "Technologies Used",
+        "projects.serious-game.detail.tech1": "Game engine for interface development",
+        "projects.serious-game.detail.tech2": "Programming language for application logic",
+        
+        // Library project detail
+        "projects.library.detail.context-title": "Project Context",
+        "projects.library.detail.context-text": "This project came from an assessment in which we had to create a dynamic website. We chose to create a book management site for a fictional bookstore since it requires, at minimum, PHP to manage book inventory and user login in addition to HTML and CSS.",
+        "projects.library.detail.features-title": "Main Features",
+        "projects.library.detail.feature1-title": "Book Catalog",
+        "projects.library.detail.feature1-desc": "Homepage displaying all available or unavailable books",
+        "projects.library.detail.feature2-title": "Advanced Search",
+        "projects.library.detail.feature2-desc": "Search by work title or author",
+        "projects.library.detail.feature3-title": "Authentication System",
+        "projects.library.detail.feature3-desc": "User login and registration",
+        "projects.library.detail.feature4-title": "Cart Management",
+        "projects.library.detail.feature4-desc": "Book reservation with automatic availability update",
+        "projects.library.detail.journey-title": "User Journey",
+        "projects.library.detail.journey1-title": "Homepage",
+        "projects.library.detail.journey1-desc": "Display of all books with their availability status. Ability to search for a specific book.",
+        "projects.library.detail.journey2-title": "Authentication",
+        "projects.library.detail.journey2-desc": "To reserve books, users must log in or create an account.",
+        "projects.library.detail.journey3-title": "Reservation",
+        "projects.library.detail.journey3-desc": "Once logged in, users can add books to the cart. Reserved books are marked as \"Unavailable\".",
+        "projects.library.detail.screenshots-title": "Website Preview",
+        "projects.library.detail.screen1": "Website homepage",
+        "projects.library.detail.screen2": "Search result",
+        "projects.library.detail.screen3": "Login page",
+        "projects.library.detail.screen4": "Registration page",
+        "projects.library.detail.tech-title": "Technologies Used",
+        "projects.library.detail.tech1-desc": "User interface structure and styling",
+        "projects.library.detail.tech2-desc": "Server-side management, authentication and business logic",
+        "projects.library.detail.tech3-desc": "Database management (books, users, reservations)",
+        "projects.library.detail.tech4-desc": "Version control and collaboration",
+        "projects.library.detail.objectives-title": "Project Objectives",
+        "projects.library.detail.objectives-intro": "The main objective was to evaluate the skills acquired in web technologies by creating a complete dynamic website. This project allowed to put into practice:",
+        "projects.library.detail.objective1": "Creating a three-tier web architecture (presentation, logic, data)",
+        "projects.library.detail.objective2": "Session management and user authentication",
+        "projects.library.detail.objective3": "CRUD operations on a database",
+        "projects.library.detail.objective4": "Securing forms and SQL queries",
+        "projects.library.detail.objective5": "Resource state and availability management"
+    }
+};
+
+let currentLang = 'fr';
+
+// Initialiser le système de langue
+function initializeLanguage() {
+    // Charger la langue sauvegardée ou utiliser le français par défaut
+    const savedLang = localStorage.getItem('language') || 'fr';
+    currentLang = savedLang;
+    
+    // Configurer le bouton de langue
+    const langToggle = document.querySelector('.lang-toggle');
+    if (langToggle) {
+        updateLanguageButton();
+        langToggle.addEventListener('click', toggleLanguage);
+    }
+    
+    // Appliquer la langue
+    applyLanguage(currentLang);
+}
+
+// Changer de langue
+function toggleLanguage() {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('language', currentLang);
+    applyLanguage(currentLang);
+    updateLanguageButton();
+}
+
+// Mettre à jour le bouton de langue
+function updateLanguageButton() {
+    const langToggle = document.querySelector('.lang-toggle');
+    const flagIcon = langToggle?.querySelector('.flag-icon');
+    
+    if (flagIcon) {
+        flagIcon.textContent = currentLang === 'fr' ? '🇫🇷' : '🇬🇧';
+    }
+    
+    if (langToggle) {
+        langToggle.title = translations[currentLang]['lang.toggle'];
+    }
+}
+
+// Appliquer les traductions
+function applyLanguage(lang) {
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const translation = translations[lang][key];
+        
+        if (translation) {
+            // Si l'élément contient du HTML (balises br, span, etc.), utiliser innerHTML
+            if (translation.includes('<br>') || translation.includes('<')) {
+                element.innerHTML = translation;
+            } else {
+                element.textContent = translation;
+            }
+        }
+    });
+    
+    // Traduire les skill-level
+    const skillLevels = document.querySelectorAll('.skill-level');
+    const levelMap = {
+        'fr': {
+            'Faible maîtrise': 'Faible maîtrise',
+            'Maîtrise moyenne': 'Maîtrise moyenne',
+            'Bonne maîtrise': 'Bonne maîtrise',
+            'Autonome': 'Autonome',
+            'Basic knowledge': 'Faible maîtrise',
+            'Average mastery': 'Maîtrise moyenne',
+            'Good mastery': 'Bonne maîtrise',
+            'Autonomous': 'Autonome'
+        },
+        'en': {
+            'Faible maîtrise': 'Basic knowledge',
+            'Maîtrise moyenne': 'Average mastery',
+            'Bonne maîtrise': 'Good mastery',
+            'Autonome': 'Autonomous',
+            'Basic knowledge': 'Basic knowledge',
+            'Average mastery': 'Average mastery',
+            'Good mastery': 'Good mastery',
+            'Autonomous': 'Autonomous'
+        }
+    };
+    
+    skillLevels.forEach(level => {
+        const currentText = level.textContent.trim();
+        const newText = levelMap[lang][currentText];
+        if (newText) {
+            level.textContent = newText;
+        }
+    });
+    
+    // Mettre à jour l'attribut lang du HTML
+    document.documentElement.lang = lang;
+    
+    // Mettre à jour les titres des boutons
+    const themeToggle = document.querySelector('.theme-toggle');
+    if (themeToggle) {
+        themeToggle.title = translations[lang]['theme.toggle'];
+    }
+    
+    const powerButton = document.querySelector('.power-button');
+    if (powerButton) {
+        powerButton.title = translations[lang]['power.button'];
+    }
+}
 

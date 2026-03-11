@@ -21,7 +21,7 @@
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
             </div>
-            <span>Profil</span>
+            <span data-i18n="profile">Profil</span>
         </div>
         <div class="icon" data-window="skills">
             <div class="icon-image">
@@ -29,7 +29,7 @@
                     <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
                 </svg>
             </div>
-            <span>Compétences</span>
+            <span data-i18n="skills">Compétences</span>
         </div>
         <div class="icon" data-window="projects">
             <div class="icon-image">
@@ -37,7 +37,7 @@
                     <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
                 </svg>
             </div>
-            <span>Projets</span>
+            <span data-i18n="projects">Projets</span>
         </div>
         <div class="icon" data-window="contact">
             <div class="icon-image">
@@ -45,7 +45,7 @@
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
             </div>
-            <span>Contact</span>
+            <span data-i18n="contact">Contact</span>
         </div>
     </div>
 
@@ -56,7 +56,7 @@
                 <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
-                Profil
+                <span data-i18n="profile">Profil</span>
             </div>
             <div class="window-controls">
                 <button class="window-control minimize">−</button>
@@ -74,14 +74,14 @@
                     </div>  
                     <h1>Mathys GESLIN</h1>
                     <p class="profile-subtitle">
-                        Étudiant à l'ENSIM (École Nationale Supérieure d'Ingénieurs du Mans)<br>
-                        En alternance chez COVEA - Automatisation de tests
+                        <span data-i18n="profile.subtitle">Étudiant à l'ENSIM (École Nationale Supérieure d'Ingénieurs du Mans)<br>
+                        En alternance chez COVEA - Automatisation de tests</span>
                     </p>
                 </div>
                 <div class="profile-info">
                     <div class="info-section">
-                        <h2>À propos</h2>
-                        <p>
+                        <h2 data-i18n="profile.about.title">À propos</h2>
+                        <p data-i18n="profile.about.text">
                             Passionné par le développement informatique et l'innovation technologique,
                             j'ai un parcours marqué par des projets concrets réalisés tout au long
                             de mes deux formations que ce soit en Java, avec Unity ou encore
@@ -89,11 +89,11 @@
                         </p>
                     </div>
                     <div class="info-section">
-                        <h2>Parcours professionnel</h2>
+                        <h2 data-i18n="profile.experience.title">Parcours professionnel</h2>
                         <ul class="timeline">
                             <li>
-                                <strong>Août 2025 - Présent</strong>
-                                <p>Alternance chez COVEA - Automatisation de tests</p>
+                                <strong data-i18n="profile.experience.covea.date">Août 2025 - Présent</strong>
+                                <p data-i18n="profile.experience.covea.title">Alternance chez COVEA - Automatisation de tests</p>
                                 <br>
                                 <span class="tag">Selenium</span>
                                 <span class="tag">Java</span>
@@ -106,9 +106,9 @@
                                 <span class="tag">IntelliJ IDEA</span>
                             </li>
                             <li>
-                                <strong>Juillet 2025 - Août 2025</strong>
-                                <p>CDD chez Bleez - Développeur de logiciel</p>
-                                <p>Développement d'une API bancaire pour un logiciel de comptabilité</p>
+                                <strong data-i18n="profile.experience.bleez2.date">Juillet 2025 - Août 2025</strong>
+                                <p data-i18n="profile.experience.bleez2.title">CDD chez Bleez - Développeur de logiciel</p>
+                                <p data-i18n="profile.experience.bleez2.desc">Développement d'une API bancaire pour un logiciel de comptabilité</p>
                                 <br>
                                 <span class="tag">Java</span>
                                 <span class="tag">XML</span>
@@ -117,8 +117,8 @@
                                 <span class="tag">IntelliJ IDEA</span>
                             </li>
                             <li>
-                                <strong>Mars 2024 - Juillet 2024</strong>
-                                <p>Stage au LIUM (Laboratoire d'Informatique de l'Université du Mans) - Ingénierie de données</p>
+                                <strong data-i18n="profile.experience.lium.date">Mars 2024 - Juillet 2024</strong>
+                                <p data-i18n="profile.experience.lium.title">Stage au LIUM (Laboratoire d'Informatique de l'Université du Mans) - Ingénierie de données</p>
                                 <br>
                                 <span class="tag">Python</span>
                                 <span class="tag">dbt</span>
@@ -129,8 +129,8 @@
                                 <span class="tag">VS Code</span>
                             </li>
                             <li>
-                                <strong>Avril 2023 - Août 2023</strong>
-                                <p>Stage et CDD chez Bleez - Automatisation de tests</p>
+                                <strong data-i18n="profile.experience.bleez1.date">Avril 2023 - Août 2023</strong>
+                                <p data-i18n="profile.experience.bleez1.title">Stage et CDD chez Bleez - Automatisation de tests</p>
                                 <br>
                                 <span class="tag">Robotframework</span>
                                 <span class="tag">Jira</span>
@@ -141,28 +141,28 @@
                         </ul>
                     </div>
                     <div class="info-section">
-                        <h2>Formations</h2>
+                        <h2 data-i18n="profile.education.title">Formations</h2>
                         <ul class="timeline">
                             <li>
-                                <strong>Septembre 2024 - Juin 2027</strong>
-                                <p>ENSIM - École Nationale Supérieure d'Ingénieurs du Mans - Université du Mans, France</p>
-                                <p>Informatique - Formation initiale en 3e année puis alternance</p>
+                                <strong data-i18n="profile.education.ensim.date">Septembre 2024 - Juin 2027</strong>
+                                <p data-i18n="profile.education.ensim.school">ENSIM - École Nationale Supérieure d'Ingénieurs du Mans - Université du Mans, France</p>
+                                <p data-i18n="profile.education.ensim.program">Informatique - Formation initiale en 3e année puis alternance</p>
                             </li>
                             <li>
-                                <strong>Septembre 2021 - Juin 2024</strong>
-                                <p>IUT de Laval - Université du Mans, France</p>
-                                <p>Parcours réalisation d'applications</p>
+                                <strong data-i18n="profile.education.iut.date">Septembre 2021 - Juin 2024</strong>
+                                <p data-i18n="profile.education.iut.school">IUT de Laval - Université du Mans, France</p>
+                                <p data-i18n="profile.education.iut.program">Parcours réalisation d'applications</p>
                             </li>
                         </ul>
                     </div>
                     <div class="info-section">
-                        <h2>Centres d'intérêt</h2>
+                        <h2 data-i18n="profile.interests.title">Centres d'intérêt</h2>
                         <div class="interests">                            
-                            <span class="tag">Design UI/UX</span>
-                            <span class="tag">Nouvelles Technologies</span>
-                            <span class="tag">Jeux Vidéo</span>
-                            <span class="tag">Automobile</span>
-                            <span class="tag">Intelligence Artificielle</span>
+                            <span class="tag" data-i18n="profile.interests.tag.uiux">Design UI/UX</span>
+                            <span class="tag" data-i18n="profile.interests.tag.tech">Nouvelles Technologies</span>
+                            <span class="tag" data-i18n="profile.interests.tag.games">Jeux Vidéo</span>
+                            <span class="tag" data-i18n="profile.interests.tag.car">Automobile</span>
+                            <span class="tag" data-i18n="profile.interests.tag.ai">Intelligence Artificielle</span>
                         </div>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                 <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
                 </svg>
-                Compétences
+                <span data-i18n="skills">Compétences</span>
             </div>
             <div class="window-controls">
                 <button class="window-control minimize">−</button>
@@ -188,28 +188,28 @@
         <div class="window-content">
             <div class="skills-container">
                 <div class="skills-legend">
-                    <h3>Légende des niveaux de maîtrise</h3>
+                    <h3 data-i18n="skills.legend.title">Légende des niveaux de maîtrise</h3>
                     <div class="legend-items">
                         <div class="legend-item">
                             <div class="legend-bar" data-level="faible"></div>
-                            <span>Faible maîtrise</span>
+                            <span data-i18n="skills.level.weak">Faible maîtrise</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-bar" data-level="moyenne"></div>
-                            <span>Maîtrise moyenne</span>
+                            <span data-i18n="skills.level.average">Maîtrise moyenne</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-bar" data-level="bonne"></div>
-                            <span>Bonne maîtrise</span>
+                            <span data-i18n="skills.level.good">Bonne maîtrise</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-bar" data-level="autonome"></div>
-                            <span>Autonome</span>
+                            <span data-i18n="skills.level.autonomous">Autonome</span>
                         </div>
                     </div>
                 </div>
                 <div class="skills-category">
-                    <h2>Front-End</h2>
+                    <h2 data-i18n="skills.category.frontend">Front-End</h2>
                     <div class="skill-item">
                         <div class="skill-header">
                             <span>HTML/CSS</span>
@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="skills-category">
-                    <h2>Back-End & Langages</h2>
+                    <h2 data-i18n="skills.category.backend">Back-End & Langages</h2>
                     <div class="skill-item">
                         <div class="skill-header">
                             <span>Java</span>
@@ -313,7 +313,7 @@
                 </div>
 
                 <div class="skills-category">
-                    <h2>Outils & Frameworks</h2>
+                    <h2 data-i18n="skills.category.tools">Outils & Frameworks</h2>
                     
                     <div class="skill-item">
                         <div class="skill-header">
@@ -446,7 +446,7 @@
                 <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
                 </svg>
-                Mes Projets
+                <span data-i18n="projects.title">Mes Projets</span>
             </div>
             <div class="window-controls">
                 <button class="window-control minimize">−</button>
@@ -461,7 +461,7 @@
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
                     </svg>
-                    <span>Retour aux projets</span>
+                    <span data-i18n="projects.button.back">Retour aux projets</span>
                 </button>
             </div>
 
@@ -472,14 +472,14 @@
                         <img src="img\jeuSerieux\listeEleves.png" alt="Liste des élèves" class="screenshot-img">
                     </div>
                     <div class="project-info">
-                        <h3>Interface de contrôle pour jeu sérieux</h3>
-                        <p>Réalisation d'une interface pour jeu sérieux permettant la révision des tables de multiplication. Elle est destinée aux professeurs pour régler les paramètres de jeu et voir la progression de chaque élève.</p>
+                        <h3 data-i18n="projects.serious-game.title">Interface de contrôle pour jeu sérieux</h3>
+                        <p data-i18n="projects.serious-game.desc">Réalisation d'une interface pour jeu sérieux permettant la révision des tables de multiplication. Elle est destinée aux professeurs pour régler les paramètres de jeu et voir la progression de chaque élève.</p>
                         <div class="project-tags">
                             <span class="tag">Unity</span>
                             <span class="tag">C#</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" onclick="navigateToProjectDetail('jeu-serieux'); return false;">Détails</a>
+                            <a href="#" class="project-link" onclick="navigateToProjectDetail('jeu-serieux'); return false;" data-i18n="projects.button.details">Détails</a>
                         </div>
                     </div>
                 </div>
@@ -489,13 +489,13 @@
                         <img src="img\mastermind.png" alt="Mastermind" class="project-image-full">
                     </div>
                     <div class="project-info">
-                        <h3>Réalisation d'un Mastermind</h3>
-                        <p>Reproduction du célèbre jeu de réflexion au format numérique. Réalisé dans le cadre d'une évaluation pour observer les compétences en algorithmie et structures de données.</p>
+                        <h3 data-i18n="projects.mastermind.title">Réalisation d'un Mastermind</h3>
+                        <p data-i18n="projects.mastermind.desc">Reproduction du célèbre jeu de réflexion au format numérique. Réalisé dans le cadre d'une évaluation pour observer les compétences en algorithmie et structures de données.</p>
                         <div class="project-tags">
                             <span class="tag">C</span>
                         </div>
                         <div class="project-links">
-                            <a href="other\Mathys_GESLIN_Mastermind.exe" class="project-link" download>Télécharger</a>
+                            <a href="other\Mathys_GESLIN_Mastermind.exe" class="project-link" download data-i18n="projects.button.download">Télécharger</a>
                         </div>
                     </div>
                 </div>
@@ -505,8 +505,8 @@
                         <img src="img\librairie\librairie.png" alt="Librairie" class="screenshot-img">
                     </div>
                     <div class="project-info">
-                        <h3>Site web de gestion de livres d'une librairie</h3>
-                        <p>Gestionnaire de livres d'une librairie fictive permettant la réservation de livres en ligne. Évaluation des compétences sur les technologies web en réalisant un site dynamique.</p>
+                        <h3 data-i18n="projects.library.title">Site web de gestion de livres d'une librairie</h3>
+                        <p data-i18n="projects.library.desc">Gestionnaire de livres d'une librairie fictive permettant la réservation de livres en ligne. Évaluation des compétences sur les technologies web en réalisant un site dynamique.</p>
                         <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -515,7 +515,7 @@
                             <span class="tag">GitLab</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" onclick="navigateToProjectDetail('librairie'); return false;">Détails</a>
+                            <a href="#" class="project-link" onclick="navigateToProjectDetail('librairie'); return false;" data-i18n="projects.button.details">Détails</a>
                         </div>
                     </div>
                 </div>
@@ -525,8 +525,8 @@
                         <img src="img\TOEIC.png" alt="TOEIC" class="project-image-full">
                     </div>
                     <div class="project-info">
-                        <h3>Site web d'entrainement au TOEIC</h3>
-                        <p>Plateforme d'entrainement à la certification d'anglais. Projet transversal visant à créer une plateforme sur laquelle les étudiants de l'ENSIM peuvent s'entrainer, réviser et se tester.</p>
+                        <h3 data-i18n="projects.toeic.title">Site web d'entrainement au TOEIC</h3>
+                        <p data-i18n="projects.toeic.desc">Plateforme d'entrainement à la certification d'anglais. Projet transversal visant à créer une plateforme sur laquelle les étudiants de l'ENSIM peuvent s'entrainer, réviser et se tester.</p>
                         <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -546,12 +546,12 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Tests Automatisés - COVEA</h3>
-                        <p>Réalisation de tests automatisés pour les applications du groupe COVEA. Alternance en cours ayant pour objectifs :</p>
+                        <h3 data-i18n="projects.covea.title">Tests Automatisés - COVEA</h3>
+                        <p data-i18n="projects.covea.desc">Réalisation de tests automatisés pour les applications du groupe COVEA. Alternance en cours ayant pour objectifs :</p>
                         <ul>
-                            <li>Sécuriser les services vitaux (services essentiels au bon fonctionnement de l'entreprise)</li>
-                            <li>Réaliser des peuplements de données</li>
-                            <li>Réaliser les campagnes de tests automatisés selon les versions des logiciels internes</li>
+                            <li data-i18n="projects.covea.obj1">Sécuriser les services vitaux (services essentiels au bon fonctionnement de l'entreprise)</li>
+                            <li data-i18n="projects.covea.obj2">Réaliser des peuplements de données</li>
+                            <li data-i18n="projects.covea.obj3">Réaliser les campagnes de tests automatisés selon les versions des logiciels internes</li>
                         </ul>
                         <div class="project-tags">
                             <span class="tag">Selenium</span>
@@ -579,8 +579,8 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Pipeline de données - LIUM</h3>
-                        <p>Réalisation d'un pipeline de données pour traiter et analyser des données vibro-acoustiques suivant différents cas d'utilisateur. Stage de 16 semaines au laboratoire LIUM.</p>
+                        <h3 data-i18n="projects.lium.title">Pipeline de données - LIUM</h3>
+                        <p data-i18n="projects.lium.desc">Réalisation d'un pipeline de données pour traiter et analyser des données vibro-acoustiques suivant différents cas d'utilisateur. Stage de 16 semaines au laboratoire LIUM.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">dbt</span>
@@ -602,8 +602,8 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Tests Fonctionnels Automatisés - Bleez</h3>
-                        <p>Réalisation de tests fonctionnels automatisés (TFA) simulant le comportement d'un utilisateur sur la nouvelle interface du logiciel de comptabilité. Stage de 12 semaines chez Bleez (ex-Compta.com).</p>
+                        <h3 data-i18n="projects.bleez.title">Tests Fonctionnels Automatisés - Bleez</h3>
+                        <p data-i18n="projects.bleez.desc">Réalisation de tests fonctionnels automatisés (TFA) simulant le comportement d'un utilisateur sur la nouvelle interface du logiciel de comptabilité. Stage de 12 semaines chez Bleez (ex-Compta.com).</p>
                         <div class="project-tags">
                             <span class="tag">Robotframework</span>
                             <span class="tag">JavaScript</span>
@@ -621,7 +621,7 @@
                 <!-- Détails Jeu Sérieux -->
                 <div class="project-detail" id="detail-jeu-serieux" style="display: none;">
                     <div class="project-detail-header">
-                        <h1>Interface de contrôle pour jeu sérieux</h1>
+                        <h1 data-i18n="projects.serious-game.title">Interface de contrôle pour jeu sérieux</h1>
                         <div class="project-tags">
                             <span class="tag">Unity</span>
                             <span class="tag">C#</span>
@@ -629,8 +629,8 @@
                     </div>
 
                     <div class="project-section">
-                        <h2>Description du projet</h2>
-                        <p>
+                        <h2 data-i18n="projects.serious-game.detail.desc-title">Description du projet</h2>
+                        <p data-i18n="projects.serious-game.detail.desc-text">
                             Ce projet avait pour but de développer une interface de contrôle et de suivi de progression sur un jeu sérieux existant.
                             Le jeu en question reprend certains codes des jeux Zelda, à savoir la résolution d'énigmes et l'obtention d'objets permettant de progresser.
                             Avec cette interface, les professeurs peuvent regrouper par classe les élèves puis choisir pour chacun d'eux un parcours d'apprentissage.
@@ -638,66 +638,66 @@
                     </div>
 
                     <div class="project-section">
-                        <h2>Fonctionnalités principales</h2>
+                        <h2 data-i18n="projects.serious-game.detail.features-title">Fonctionnalités principales</h2>
                         <div class="features-grid">
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Gestion des classes</h3>
-                                <p>Organisation et regroupement des élèves par classe</p>
+                                <h3 data-i18n="projects.serious-game.detail.feature1-title">Gestion des classes</h3>
+                                <p data-i18n="projects.serious-game.detail.feature1-desc">Organisation et regroupement des élèves par classe</p>
                             </div>
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Parcours personnalisés</h3>
-                                <p>Configuration de parcours d'apprentissage individuels</p>
+                                <h3 data-i18n="projects.serious-game.detail.feature2-title">Parcours personnalisés</h3>
+                                <p data-i18n="projects.serious-game.detail.feature2-desc">Configuration de parcours d'apprentissage individuels</p>
                             </div>
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Suivi de progression</h3>
-                                <p>Visualisation détaillée des statistiques et de la progression</p>
+                                <h3 data-i18n="projects.serious-game.detail.feature3-title">Suivi de progression</h3>
+                                <p data-i18n="projects.serious-game.detail.feature3-desc">Visualisation détaillée des statistiques et de la progression</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-section">
-                        <h2>Aperçus de l'interface</h2>
+                        <h2 data-i18n="projects.serious-game.detail.screenshots-title">Aperçus de l'interface</h2>
                         <div class="screenshots-gallery">
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\jeuSerieux\jeuSerieux.png" alt="Liste des classes" class="screenshot-img">
-                                <p class="screenshot-caption">Liste des classes</p>
+                                <p class="screenshot-caption" data-i18n="projects.serious-game.detail.screen1">Liste des classes</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\jeuSerieux\listeEleves.png" alt="Liste des élèves" class="screenshot-img">
-                                <p class="screenshot-caption">Liste des élèves</p>
+                                <p class="screenshot-caption" data-i18n="projects.serious-game.detail.screen2">Liste des élèves</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\jeuSerieux\modificationParcoursEleve.png" alt="Paramétrage du parcours" class="screenshot-img">
-                                <p class="screenshot-caption">Paramétrage du parcours</p>
+                                <p class="screenshot-caption" data-i18n="projects.serious-game.detail.screen3">Paramétrage du parcours</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\jeuSerieux\progressionEleve1.png" alt="Progression d'un élève" class="screenshot-img">
-                                <p class="screenshot-caption">Progression d'un élève</p>
+                                <p class="screenshot-caption" data-i18n="projects.serious-game.detail.screen4">Progression d'un élève</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\jeuSerieux\progressionEleve2.png" alt="Progression détaillée" class="screenshot-img">
-                                <p class="screenshot-caption">Progression détaillée</p>
+                                <p class="screenshot-caption" data-i18n="projects.serious-game.detail.screen5">Progression détaillée</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\jeuSerieux\statsEleve.png" alt="Statistiques complètes" class="screenshot-img">
-                                <p class="screenshot-caption">Statistiques complètes</p>
+                                <p class="screenshot-caption" data-i18n="projects.serious-game.detail.screen6">Statistiques complètes</p>
                             </div>
                         </div>
-                        <p class="screenshots-confidential">* Les captures d'écran réelles du jeu ne peuvent pas être montrées pour des raisons de confidentialité.</p>
+                        <p class="screenshots-confidential" data-i18n="projects.serious-game.detail.confidential">* Les captures d'écran réelles du jeu ne peuvent pas être montrées pour des raisons de confidentialité.</p>
                     </div>
 
                     <div class="project-section">
-                        <h2>Objectifs pédagogiques</h2>
-                        <p>
+                        <h2 data-i18n="projects.serious-game.detail.objectives-title">Objectifs pédagogiques</h2>
+                        <p data-i18n="projects.serious-game.detail.objectives-text">
                             L'interface permet aux professeurs d'adapter le niveau de difficulté et de suivre la progression de chaque élève individuellement.
                             Le jeu sérieux vise à réviser les tables de multiplication de manière ludique et engageante, en utilisant des mécaniques de jeu inspirées
                             des jeux d'aventure classiques.
@@ -705,15 +705,15 @@
                     </div>
 
                     <div class="project-section">
-                        <h2>Technologies utilisées</h2>
+                        <h2 data-i18n="projects.serious-game.detail.tech-title">Technologies utilisées</h2>
                         <div class="tech-list">
                             <div class="tech-item">
                                 <strong>Unity</strong>
-                                <p>Moteur de jeu pour le développement de l'interface</p>
+                                <p data-i18n="projects.serious-game.detail.tech1">Moteur de jeu pour le développement de l'interface</p>
                             </div>
                             <div class="tech-item">
                                 <strong>C#</strong>
-                                <p>Langage de programmation pour la logique applicative</p>
+                                <p data-i18n="projects.serious-game.detail.tech2">Langage de programmation pour la logique applicative</p>
                             </div>
                         </div>
                     </div>
@@ -723,7 +723,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
                             </svg>
-                            <span>Retour aux projets</span>
+                            <span data-i18n="projects.button.back">Retour aux projets</span>
                         </button>
                     </div>
                 </div>
@@ -731,7 +731,7 @@
                 <!-- Détails Librairie -->
                 <div class="project-detail" id="detail-librairie" style="display: none;">
                     <div class="project-detail-header">
-                        <h1>Site web de gestion de livres d'une librairie</h1>
+                        <h1 data-i18n="projects.library.title">Site web de gestion de livres d'une librairie</h1>
                         <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -742,8 +742,8 @@
                     </div>
 
                     <div class="project-section">
-                        <h2>Contexte du projet</h2>
-                        <p>
+                        <h2 data-i18n="projects.library.detail.context-title">Contexte du projet</h2>
+                        <p data-i18n="projects.library.detail.context-text">
                             Ce projet est issu d'une évaluation dans laquelle nous devions réaliser un site web dynamique. Nous avons choisi de créer 
                             un site de gestion de livres pour une librairie fictive étant donné qu'il est nécessaire d'avoir, à minima, du PHP pour 
                             gérer les stocks de livres et la connexion de l'utilisateur en plus de l'HTML et du CSS.
@@ -751,122 +751,122 @@
                     </div>
 
                     <div class="project-section">
-                        <h2>Fonctionnalités principales</h2>
+                        <h2 data-i18n="projects.library.detail.features-title">Fonctionnalités principales</h2>
                         <div class="features-grid">
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Catalogue de livres</h3>
-                                <p>Page d'accueil affichant tous les livres disponibles ou non</p>
+                                <h3 data-i18n="projects.library.detail.feature1-title">Catalogue de livres</h3>
+                                <p data-i18n="projects.library.detail.feature1-desc">Page d'accueil affichant tous les livres disponibles ou non</p>
                             </div>
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Recherche avancée</h3>
-                                <p>Recherche par titre d'œuvre ou par auteur</p>
+                                <h3 data-i18n="projects.library.detail.feature2-title">Recherche avancée</h3>
+                                <p data-i18n="projects.library.detail.feature2-desc">Recherche par titre d'œuvre ou par auteur</p>
                             </div>
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Système d'authentification</h3>
-                                <p>Connexion et inscription des utilisateurs</p>
+                                <h3 data-i18n="projects.library.detail.feature3-title">Système d'authentification</h3>
+                                <p data-i18n="projects.library.detail.feature3-desc">Connexion et inscription des utilisateurs</p>
                             </div>
                             <div class="feature-item">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
-                                <h3>Gestion de panier</h3>
-                                <p>Réservation de livres avec mise à jour automatique de la disponibilité</p>
+                                <h3 data-i18n="projects.library.detail.feature4-title">Gestion de panier</h3>
+                                <p data-i18n="projects.library.detail.feature4-desc">Réservation de livres avec mise à jour automatique de la disponibilité</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-section">
-                        <h2>Parcours utilisateur</h2>
+                        <h2 data-i18n="projects.library.detail.journey-title">Parcours utilisateur</h2>
                         <div class="user-journey">
                             <div class="journey-step">
                                 <div class="step-number">1</div>
                                 <div class="step-content">
-                                    <h3>Page d'accueil</h3>
-                                    <p>Affichage de tous les livres avec leur statut de disponibilité. Possibilité de rechercher un livre spécifique.</p>
+                                    <h3 data-i18n="projects.library.detail.journey1-title">Page d'accueil</h3>
+                                    <p data-i18n="projects.library.detail.journey1-desc">Affichage de tous les livres avec leur statut de disponibilité. Possibilité de rechercher un livre spécifique.</p>
                                 </div>
                             </div>
                             <div class="journey-step">
                                 <div class="step-number">2</div>
                                 <div class="step-content">
-                                    <h3>Authentification</h3>
-                                    <p>Pour réserver des livres, l'utilisateur doit se connecter ou créer un compte.</p>
+                                    <h3 data-i18n="projects.library.detail.journey2-title">Authentification</h3>
+                                    <p data-i18n="projects.library.detail.journey2-desc">Pour réserver des livres, l'utilisateur doit se connecter ou créer un compte.</p>
                                 </div>
                             </div>
                             <div class="journey-step">
                                 <div class="step-number">3</div>
                                 <div class="step-content">
-                                    <h3>Réservation</h3>
-                                    <p>Une fois connecté, l'utilisateur peut ajouter des livres au panier. Les livres réservés sont marqués comme "Indisponible".</p>
+                                    <h3 data-i18n="projects.library.detail.journey3-title">Réservation</h3>
+                                    <p data-i18n="projects.library.detail.journey3-desc">Une fois connecté, l'utilisateur peut ajouter des livres au panier. Les livres réservés sont marqués comme "Indisponible".</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-section">
-                        <h2>Aperçus du site</h2>
+                        <h2 data-i18n="projects.library.detail.screenshots-title">Aperçus du site</h2>
                         <div class="screenshots-gallery">
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\librairie\accueilConnecte.png" alt="Page d'accueil du site de gestion de livres" class="screenshot-img">
-                                <p class="screenshot-caption">Page d'accueil du site</p>
+                                <p class="screenshot-caption" data-i18n="projects.library.detail.screen1">Page d'accueil du site</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\librairie\recherche.png" alt="Résultat d'une recherche" class="screenshot-img">
-                                <p class="screenshot-caption">Résultat d'une recherche</p>
+                                <p class="screenshot-caption" data-i18n="projects.library.detail.screen2">Résultat d'une recherche</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\librairie\connexion.png" alt="Page de connexion" class="screenshot-img">
-                                <p class="screenshot-caption">Page de connexion</p>
+                                <p class="screenshot-caption" data-i18n="projects.library.detail.screen3">Page de connexion</p>
                             </div>
                             <div class="screenshot-item" onclick="openImageModal(this)">
                                 <img src="img\librairie\inscription.png" alt="Page d'inscription" class="screenshot-img">
-                                <p class="screenshot-caption">Page d'inscription</p>
+                                <p class="screenshot-caption" data-i18n="projects.library.detail.screen4">Page d'inscription</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-section">
-                        <h2>Technologies utilisées</h2>
+                        <h2 data-i18n="projects.library.detail.tech-title">Technologies utilisées</h2>
                         <div class="tech-list">
                             <div class="tech-item">
                                 <strong>HTML/CSS</strong>
-                                <p>Structure et mise en forme de l'interface utilisateur</p>
+                                <p data-i18n="projects.library.detail.tech1-desc">Structure et mise en forme de l'interface utilisateur</p>
                             </div>
                             <div class="tech-item">
                                 <strong>PHP</strong>
-                                <p>Gestion côté serveur, authentification et logique métier</p>
+                                <p data-i18n="projects.library.detail.tech2-desc">Gestion côté serveur, authentification et logique métier</p>
                             </div>
                             <div class="tech-item">
                                 <strong>SQL</strong>
-                                <p>Gestion de la base de données (livres, utilisateurs, réservations)</p>
+                                <p data-i18n="projects.library.detail.tech3-desc">Gestion de la base de données (livres, utilisateurs, réservations)</p>
                             </div>
                             <div class="tech-item">
                                 <strong>GitLab</strong>
-                                <p>Gestion de version et collaboration</p>
+                                <p data-i18n="projects.library.detail.tech4-desc">Gestion de version et collaboration</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-section">
-                        <h2>Objectifs du projet</h2>
-                        <p>
+                        <h2 data-i18n="projects.library.detail.objectives-title">Objectifs du projet</h2>
+                        <p data-i18n="projects.library.detail.objectives-intro">
                             L'objectif principal était d'évaluer les compétences acquises sur les technologies web en réalisant un site dynamique complet.
                             Ce projet a permis de mettre en pratique :
                         </p>
                         <ul>
-                            <li>La création d'une architecture web trois tiers (présentation, logique, données)</li>
-                            <li>La gestion de sessions et d'authentification utilisateur</li>
-                            <li>Les opérations CRUD sur une base de données</li>
-                            <li>La sécurisation des formulaires et des requêtes SQL</li>
-                            <li>La gestion d'état et de disponibilité des ressources</li>
+                            <li data-i18n="projects.library.detail.objective1">La création d'une architecture web trois tiers (présentation, logique, données)</li>
+                            <li data-i18n="projects.library.detail.objective2">La gestion de sessions et d'authentification utilisateur</li>
+                            <li data-i18n="projects.library.detail.objective3">Les opérations CRUD sur une base de données</li>
+                            <li data-i18n="projects.library.detail.objective4">La sécurisation des formulaires et des requêtes SQL</li>
+                            <li data-i18n="projects.library.detail.objective5">La gestion d'état et de disponibilité des ressources</li>
                         </ul>
                     </div>
 
@@ -875,7 +875,7 @@
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
                             </svg>
-                            <span>Retour aux projets</span>
+                            <span data-i18n="projects.button.back">Retour aux projets</span>
                         </button>
                     </div>
                 </div>
@@ -890,7 +890,7 @@
                 <svg class="window-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
-                Contact
+                <span data-i18n="contact">Contact</span>
             </div>
             <div class="window-controls">
                 <button class="window-control minimize">−</button>
@@ -901,8 +901,8 @@
         <div class="window-content">
             <div class="contact-container">
                 <div class="contact-info">
-                    <h2>Restons en contact</h2>
-                    <p>N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger !</p>
+                    <h2 data-i18n="contact.title">Restons en contact</h2>
+                    <p data-i18n="contact.description">N'hésitez pas à me contacter pour discuter de vos projets ou simplement échanger !</p>
                 
 
                     <div class="contact-actions">
@@ -910,13 +910,13 @@
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                             </svg>
-                            M'envoyer un email
+                            <span data-i18n="contact.button.email">M'envoyer un email</span>
                         </a>
                         <a href="https://www.linkedin.com/in/mathys-geslin-342470239/" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin-btn">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
-                            Voir mon profil LinkedIn
+                            <span data-i18n="contact.button.linkedin">Voir mon profil LinkedIn</span>
                         </a>
                     </div>
                 </div>
@@ -937,6 +937,9 @@
         </div>
 
         <div class="system-tray">
+            <button class="lang-toggle" title="Changer la langue">
+                <span class="flag-icon">🇫🇷</span>
+            </button>
             <button class="theme-toggle" title="Changer le thème">
                 <svg class="sun-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
@@ -959,7 +962,7 @@
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
-                <span>Mathys Geslin</span>
+                <span data-i18n="menu.user">Mathys Geslin</span>
             </div>
         </div>
         <div class="start-menu-items">
@@ -967,25 +970,25 @@
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
-                <span>Profil</span>
+                <span data-i18n="profile">Profil</span>
             </div>
             <div class="start-menu-item" data-window="skills">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
                 </svg>
-                <span>Compétences</span>
+                <span data-i18n="skills">Compétences</span>
             </div>
             <div class="start-menu-item" data-window="projects">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
                 </svg>
-                <span>Projets</span>
+                <span data-i18n="projects">Projets</span>
             </div>
             <div class="start-menu-item" data-window="contact">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
-                <span>Contact</span>
+                <span data-i18n="contact">Contact</span>
             </div>
         </div>
         <div class="start-menu-footer">
