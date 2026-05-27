@@ -818,6 +818,7 @@ const translations = {
         // Icônes bureau et menu
         profile: "Profil",
         skills: "Compétences",
+        alternance: "Alternance",
         projects: "Projets",
         contact: "Contact",
         
@@ -848,6 +849,9 @@ const translations = {
         "profile.interests.tag.games": "Jeux Vidéo",
         "profile.interests.tag.car": "Automobile",
         "profile.interests.tag.ai": "Intelligence Artificielle",
+        
+        // Alternance
+        "alternance.title": "Alternance",
         
         // Compétences
         "skills.legend.title": "Légende des niveaux de maîtrise",
@@ -968,6 +972,7 @@ const translations = {
         // Desktop and menu icons
         profile: "Profile",
         skills: "Skills",
+        alternance: "Work-Study",
         projects: "Projects",
         contact: "Contact",
         
@@ -998,6 +1003,9 @@ const translations = {
         "profile.interests.tag.games": "Video Games",
         "profile.interests.tag.car": "Automotive",
         "profile.interests.tag.ai": "Artificial Intelligence",
+        
+        // Alternance
+        "alternance.title": "Work-Study",
         
         // Skills
         "skills.legend.title": "Mastery Levels Legend",
