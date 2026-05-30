@@ -861,13 +861,13 @@ const translations = {
         "alternance.uf71.obj2": "Mise en œuvre d’une démarche structurée d’analyse",
         "alternance.uf71.obj3": "Mobilisation des ressources (humaines, techniques, documentaires)",
         "alternance.uf71.obj4": "Mise en application des connaissances et de l'expertise technique",
-        "alternance.uf71.template": "[Remplacer ce texte par la description de l'organisation de votre travail personnel ou des projets gérés chez COVEA]",
+        "alternance.uf71.template": "Dans le cadre de mon alternance chez COVEA, j'organise de façon autonome les campagnes de tests automatisés. Du côté de la sécurisatoin des services métiers vitaux et fondamentaux, je définis les objectifs métiers et des tests de non regression. Je recense tous les tests existants et je conçois de nouveaux tests pour couvrir les besoins métiers. Ce projet est un fil rouge tout au long de ma formation. Sur ce semestre, il s'est d'abord agi de faire ce travail pour la marque MMA afin de prendre en main les outils et les porcessus de l'entreprise.",
 
         "alternance.uf72.title": "UF 7.2 TECHNIQUE : Programmation & outillage",
         "alternance.uf72.obj1": "Connaissances des formats et des protocoles d’échanges de données (XML, JSON...)",
         "alternance.uf72.obj2": "Connaissance et prise en main d’outils liés à l’environnement de travail",
         "alternance.uf72.obj3": "Découvrir et s’approprier de nouvelles librairies de fonctions",
-        "alternance.uf72.template": "[Remplacer ce texte par vos activités de programmation en entreprise, l'utilisation de Selenium, UFT, Jenkins, etc.]",
+        "alternance.uf72.template": "Je conçois et maintiens des scripts de tests automatisés (Sélénium, UFT/VBScript) et de peuplement de données. J'utilise au quotidien des outils d'automatisation (Jenkins, Selenium, Squash) et je manipule couramment divers formats de données (JSON, XML) pour sécuriser les services vitaux du système d'information.",
 
         "alternance.uf73.title": "UF 7.3 TECHNIQUE : Developpement WEB (IPS) / Prog. OS (ASTRE)",
         "alternance.uf73.obj.ips": "Objectifs attendus (IPS / WEB) :",
@@ -875,7 +875,7 @@ const translations = {
         "alternance.uf73.obj.astre": "Objectifs attendus (ASTRE / OS) :",
         "alternance.uf73.obj.astre.1": "Comprendre le fonctionnement d'un système d'exploitation utilisé en entreprise",
         "alternance.uf73.obj.astre.2": "Mener une étude comparative et gérer l'exécution de programmes/périphériques",
-        "alternance.uf73.template": "[Remplacer ce texte par les aspects techniques Web ou système appliqués lors de votre alternance (ou supprimer l'option non choisie)]",
+        "alternance.uf73.template": "Pour écrire/corriger les tests automatisés, j'applique les connaissances, principes et logiques de programmation web classiques (POO, Page Object Model, versionning).",
 
         "alternance.semestre8": "Semestre 8",
         "alternance.uf81.title": "UF 8.1 VIE PROFESSIONNELLE : Conduite de projet",
@@ -883,21 +883,21 @@ const translations = {
         "alternance.uf81.obj2": "Recherche de solution en conception / réalisation / produit / service",
         "alternance.uf81.obj3": "Organisation de mission, conduite d'équipe et exercice de responsabilités",
         "alternance.uf81.obj4": "Présentation de livrables, bilan d'actions et engagement d'actions correctives",
-        "alternance.uf81.template": "[Remplacer ce texte par votre expérience en conduite de projet, réunions, ou démarche qualité chez COVEA]",
+        "alternance.uf81.template": "Poursuite des travaux sur les services métiers vitaux et fondamentaux chez COVEA. La projet, côté MMA, en est au stade de finalisation de la valisation des tests récupérés. Ce projet est maintenant étendu aux marques GMF et MAAF.",
 
         "alternance.uf82.title": "UF 8.2 TECHNIQUE : Sécurité du système d'information",
         "alternance.uf82.obj1": "Identifier les risques d'une cyberattaque",
         "alternance.uf82.obj2": "Comprendre le fonctionnement du Web dans un système d'information complexe",
         "alternance.uf82.obj3": "Connaître les failles dans un système et les dispositifs de sécurité",
         "alternance.uf82.obj4": "Proposer une politique de sécurité pour un système d'information",
-        "alternance.uf82.template": "[Remplacer ce texte par la façon dont vous participez à la sécurisation des services vitaux et du SI chez COVEA]",
+        "alternance.uf82.template": "Pour renforcer la sécurité de l'entreprise, nous avons remarqué que des données de connexions aux comptes de tests étaient exposées dans l'historique de Git via les .env. J'ai donc participé au déplacement de ces variables dans un serveur de variables sécurisé.",
 
         "alternance.uf83.title": "UF 8.3 TECHNIQUE : Projet ergonomie (IPS) / App GPU DSP ou ARM (ASTRE)",
         "alternance.uf83.obj.ips": "Objectifs attendus (IPS / Ergonomie) :",
         "alternance.uf83.obj.ips.1": "Application des connaissances vues en design d’interface sur l’organisation de l’écran",
         "alternance.uf83.obj.astre": "Objectifs attendus (ASTRE / Microprocesseur) :",
         "alternance.uf83.obj.astre.1": "Application des connaissances en programmation microprocesseur (GPU, DSP, ARM...)",
-        "alternance.uf83.template": "[Remplacer ce texte par votre réalisation d'application intégrant l'ergonomie / design d'interface ou la programmation microprocesseur]",
+        "alternance.uf83.template": "Cette compétence sera validée lors d'une formation dédiée à l'ergonomie des interfaces.",
         
         // Compétences
         "skills.legend.title": "Légende des niveaux de maîtrise",
@@ -1061,13 +1061,13 @@ const translations = {
         "alternance.uf71.obj2": "Implementation of a structured analysis approach",
         "alternance.uf71.obj3": "Mobilization of resources (human, technical, documentary)",
         "alternance.uf71.obj4": "Application of knowledge and technical expertise",
-        "alternance.uf71.template": "[Replace this text with the description of your personal work organization or the projects managed at COVEA]",
+        "alternance.uf71.template": "[As part of my apprenticeship at COVEA, I autonomously organize my automated test campaigns. I study and analyze requirements, prepare the necessary environments, and leverage business and documentation resources to ensure the smooth progress of my projects.]",
 
         "alternance.uf72.title": "UF 7.2 TECHNICAL: Programming & Tooling",
         "alternance.uf72.obj1": "Knowledge of data exchange formats and protocols (XML, JSON...)",
         "alternance.uf72.obj2": "Knowledge and mastery of tools related to the work environment",
         "alternance.uf72.obj3": "Discover and become familiar with new function libraries",
-        "alternance.uf72.template": "[Replace this text with your programming activities in the company, the use of Selenium, UFT, Jenkins, etc.]",
+        "alternance.uf72.template": "[I design and maintain automated test scripts as well as data population scripts. I use automation tools daily and actively handle various data formats (JSON, XML) to secure the vital services of the information system.]",
 
         "alternance.uf73.title": "UF 7.3 TECHNICAL: WEB Development (IPS) / OS Prog. (ASTRE)",
         "alternance.uf73.obj.ips": "Expected objectives (IPS / WEB):",
@@ -1075,7 +1075,7 @@ const translations = {
         "alternance.uf73.obj.astre": "Expected objectives (ASTRE / OS):",
         "alternance.uf73.obj.astre.1": "Understand the operation of an operating system used in the company",
         "alternance.uf73.obj.astre.2": "Conduct a comparative study and manage the execution of programs/peripherals",
-        "alternance.uf73.template": "[Replace this text with the technical Web or system aspects applied during your work-study program (or delete the unchosen option)]",
+        "alternance.uf73.template": "[My work requires direct interaction with the architecture of the group's Web applications. I test and validate Front-End behaviors, and analyze Back-End requests, to ensure the robustness and quality of the user interfaces provided.]",
 
         "alternance.semestre8": "Semester 8",
         "alternance.uf81.title": "UF 8.1 PROFESSIONAL LIFE: Project conduct",
